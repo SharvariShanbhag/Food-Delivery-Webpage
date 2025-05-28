@@ -8,9 +8,10 @@ import { toast } from "react-toastify";
 function Card({name,image,id,price,type}){
   let dispatch =useDispatch()
   return(
-    <div className="w-[300px] h-[400px] bg-white p-3 rounded-lg flex flex-col gap-3 shadow-lg hover:border-2 border-[#FF7A04]">
+    <div className="w-full h-[400px] sm:h-[380px] bg-white p-3 rounded-lg flex flex-col gap-3 shadow-lg hover:border-2 border-[#FF7A04]">
+
         <div className="w-[100%] h-[60%] overflow-hidden rounded-lg ">
-            <img src={image} alt=""  className="object-cover"/>
+            <img src={image} alt=""  className="object-cover  w-full h-[100%]"/>
         </div>
         <div className=" text-2xl font-semibold">
             {name}

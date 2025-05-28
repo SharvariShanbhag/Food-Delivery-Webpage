@@ -7,11 +7,17 @@ function Footer() {
     <footer className="footer">
       <div className="footer-content">
         <div className="footer-logo">
-                   <GiHamburger className="w-[50px] h-[50px] text-white text-2 "/>      <div className="font-extrabold text-white ">BiteGo</div>
+  <GiHamburger className="w-[50px] h-[50px] text-white sm:text-4xl" />
+  <div className="footer-logo-text">
+    <div className="font-extrabold text-white text-base sm:text-lg md:text-xl">BiteGo</div>
 
-          <p className="tagline">Delivering happiness, one meal at a time since 2020</p>
-          <p className="description">We connect food lovers with the best local restaurants and chefs, bringing authentic flavors right to your doorstep.</p>
-        </div>
+    <p className="tagline">Delivering happiness, one meal at a time</p>
+    <p className="description">
+      We connect food lovers with the best local restaurants and chefs, bringing authentic flavors right to your doorstep.
+    </p>
+  </div>
+</div>
+
         
         <div className="footer-links">
           <div className="link-column">

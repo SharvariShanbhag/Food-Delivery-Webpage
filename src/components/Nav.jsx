@@ -5,6 +5,7 @@ import { dataContext } from "../context/UserContext";
 import { food_items } from "../../food";
 import { useSelector } from "react-redux";
 import { Link } from 'react-router-dom';
+import './Nav.css'
 
 function Nav() {
   const { input, setInput, setCate, setShowCart } = useContext(dataContext);
@@ -22,7 +23,7 @@ function Nav() {
 
       {/* Logo Section */}
       <div className="flex items-center gap-2">
-        <GiHamburger className="w-[50px] h-[50px] text-white" />
+        <GiHamburger className=" navbar-logo-icon w-[50px] h-[50px] text-white" />
         <div className="text-white font-extrabold text-lg">BiteGo</div>
       </div>
 

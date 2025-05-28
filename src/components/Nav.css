@@ -1,0 +1,12 @@
+.navbar-logo-icon {
+  width: 50px;
+  height: 50px;
+  transition: width 0.3s ease, height 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .navbar-logo-icon {
+    width: 35px;  /* smaller on small screens */
+    height: 35px;
+  }
+}
