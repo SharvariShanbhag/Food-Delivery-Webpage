@@ -36,7 +36,7 @@ const WavySection = () => {
     navigate('/'); // Assuming "/" route renders your Home component
   };
   return (
-    <div className="hero-container">
+    <div className="hero-container ">
       <div className="hero-left animate-fade-in-left">
         <h1>Welcome to <span>BiteGo</span></h1>
         <p>

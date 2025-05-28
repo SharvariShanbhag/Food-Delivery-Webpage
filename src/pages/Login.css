@@ -64,3 +64,29 @@ body {
 .login-switch a:hover {
   text-decoration: underline;
 }
+@media (max-width: 480px) {
+  .login-container {
+    padding: 1rem;       /* add some padding so form doesn't touch screen edges */
+    height: auto;        /* allow height to adjust on small devices */
+  }
+
+  .login-form {
+    padding: 1.5rem 1rem;  /* reduce padding */
+    max-width: 100%;       /* full width on small screens */
+    box-shadow: none;      /* optional: remove shadow for cleaner look */
+  }
+
+  .login-form h2 {
+    font-size: 1.5rem;    /* smaller heading */
+  }
+
+  .login-form input,
+  .login-form button {
+    font-size: 14px;      /* smaller inputs and button text */
+    padding: 0.6rem;
+  }
+
+  .login-switch {
+    font-size: 13px;      /* smaller text */
+  }
+}

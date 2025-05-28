@@ -91,3 +91,59 @@
 .animate-fade-in-right {
   animation: fadeInRight 1s ease forwards;
 }
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column-reverse;
+    height: auto;
+  }
+
+  .hero-left,
+  .hero-right {
+    width: 100%;
+    padding: 40px 20px;
+    text-align: center;
+    clip-path: none;
+  }
+
+  .hero-left h1 {
+    font-size: 28px;
+  }
+
+  .hero-left p {
+    font-size: 16px;
+    max-width: 100%;
+  }
+
+  .order-btn,
+  .read-btn {
+    font-size: 14px;
+    padding: 10px 20px;
+    margin: 10px 5px;
+  }
+
+  .hero-right {
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-left h1 {
+    font-size: 24px;
+  }
+
+  .hero-left p {
+    font-size: 14px;
+  }
+
+  .order-btn,
+  .read-btn {
+    font-size: 13px;
+    padding: 8px 18px;
+  }
+
+  .hero-right {
+    height: 200px;
+  }
+}

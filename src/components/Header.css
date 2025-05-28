@@ -75,3 +75,29 @@
 .header-image img:hover {
   transform: scale(1.05) rotate(1deg);
 }
+.navbar {
+  position: sticky; /* or fixed if you use fixed */
+  top: 0;
+  z-index: 1000;  /* high value to keep it on top */
+  background: rgba(255, 205, 162, 0.9); /* semi-transparent so header can peek through but links stay visible */
+  backdrop-filter: blur(6px); /* optional for glass effect */
+}
+.header-image img {
+  margin: 2rem 0;
+  width: 100%;
+  max-width: 600px;
+  border-radius: 1rem;
+  transition: transform 0.5s ease;
+
+  /* Add this for pop-out effect */
+  position: relative;      /* important to keep it in flow */
+  top: 30px;               /* moves image down 30px (or adjust) */
+  /* box-shadow: 0 10px 30px rgba(0,0,0,0.3); 3D shadow */
+  z-index: 1;              /* less than navbar */
+  /* background: white;       if image has transparency, add bg */
+}
+.header {
+  padding-bottom: 4rem; /* increase bottom padding to avoid cutting image */
+  position: relative;   /* keep relative for stacking */
+  z-index: 0;
+}

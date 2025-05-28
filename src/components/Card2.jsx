@@ -8,7 +8,8 @@ import { IncrementQty, RemoveItem,DecrementQty } from "../redux/cartSlice";
 function Card2({id,price,image,qty,name}){
     let dispatch=useDispatch()
   return(
-    <div className=" w-full h-[140px] flex justify-between ">
+    <div className="w-full flex flex-col md:flex-row justify-between items-center gap-3 md:h-[140px] py-2">
+
       <div className=" h-full w-[60%] p-2 flex">
        <div className=" h-full w-[60%] overflow-hidden rounded-l">
             <img src={image} alt="" className="object-cover "/>
