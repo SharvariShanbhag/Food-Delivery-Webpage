@@ -1,0 +1,195 @@
+.footer {
+  background: #FF6947; /* Appetizing orange */
+  color: white;
+  padding: 4rem 2rem 2rem;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 30px;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.footer-logo img {
+  height: 50px;
+  margin-bottom: 1rem;
+}
+
+.footer-logo .tagline {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  font-style: italic;
+}
+
+.footer-logo .description {
+  font-size: 0.9rem;
+  opacity: 0.9;
+  max-width: 280px;
+  line-height: 1.5;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  margin-left: auto;
+}
+
+.link-column h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+}
+
+.link-column h3:after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 40px;
+  height: 3px;
+  background: white;
+}
+
+.link-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.link-column li {
+  margin-bottom: 0.8rem;
+}
+
+.link-column a {
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  display: inline-block;
+}
+
+.link-column a:hover {
+  color: #FFF8E1;
+  transform: translateX(5px);
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 2rem auto 0;
+  padding-top: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.food-slogan {
+  font-style: italic;
+  margin-left: 10px;
+  font-weight: 600;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 1.3rem;
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #FFF8E1;
+  transform: translateY(-3px) scale(1.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .footer-links {
+    margin-left: 0;
+    gap: 2rem;
+  }
+  
+  .footer-bottom {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+  
+  .footer-logo .description {
+    max-width: 100%;
+  }
+}
+/* Footer.css */
+/* ... (keep all existing styles) ... */
+
+.link-column h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 8px;
+  cursor: pointer;
+}
+
+.link-column h3::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: white;
+  transition: width 0.4s ease-out;
+}
+
+.link-column h3:hover::after {
+  width: 100%;
+}
+
+/* For a more dynamic effect where it comes from center */
+.link-column h3.alternate::after {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.link-column h3.alternate:hover::after {
+  width: 100%;
+  left: 0;
+  transform: translateX(0);
+}
+
+/* For a sliding effect from left to right */
+.link-column h3.slide::after {
+  width: 0;
+  left: 0;
+}
+
+.link-column h3.slide:hover::after {
+  width: 100%;
+  right: 0;
+  left: auto;
+}
+
+/* Add these classes to your JSX */
