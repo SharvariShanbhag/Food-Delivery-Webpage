@@ -18,18 +18,22 @@ function Nav(){
   },[input])
   let items=useSelector(state=>state.cart)
   return(
-    <div className="w-full h-[100px] flex item-center justify-between px-5 md:px-8 sticky top-0 z-50 bg-gradient-to-br from-[#FFCDA2] to-[#FFAF68] ">
+    <div className="w-full flex flex-col md:flex-row items-center justify-between px-4 md:px-8 py-4 md:h-[100px] sticky top-0 z-50 bg-gradient-to-br from-[#FFCDA2] to-[#FFAF68] space-y-4 md:space-y-0">
+
       <div className="w-[150px] h-[100px]  flex justify-center items-center rounded-md  mt-1">
         <GiHamburger className="w-[50px] h-[50px] text-white text-2"/> 
       <div className="font-extrabold text-white ">BiteGo</div>
 
       </div>
       {/* <div className="font-bold text-white">BiteGo</div> */}
-      <form className="w-[45%] h-[60px] bg-white flex items-center px-5 gap-5 rounded-md shadow-xl mt-6 md:-[w-70%] " onSubmit={(e)=>e.preventDefault()} >
+      <form className="w-full md:w-[45%] h-[50px] bg-white flex items-center px-5 gap-3 rounded-md shadow-md" onSubmit={(e)=>e.preventDefault()} >
         <IoMdSearch className="text-[#F47200] w-[30px] h-[30px]"/>
         <input type="text" placeholder="Serch Items..." className="w-[100%] outline-none text-[14px] md:text-[18px]" onChange={(e)=>setInput(e.target.value)}value={input}/>
       </form>
       <div className="flex items-center mt-3">
+      
+      
+      <div className="flex items-center gap-3 md:gap-5 mt-2 md:mt-0">
         <Link
   to="/aboutus"
   className="relative text-white px-4 py-4  rounded-full transition duration-300 hover:after:w-[35px] after:absolute after:left-4 after:bottom-2 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 font-semibold "
@@ -43,7 +47,7 @@ function Nav(){
 >
   Login
 </Link>
-
+</div>
 
       </div>
       <div className="w-[60px] h-[60px]  flex justify-center items-center rounded-md  mt-6 relative " onClick={()=>{

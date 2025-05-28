@@ -47,8 +47,8 @@ let total= Math.floor(subtotal+deliveryFee+taxes)
                 })}
             </div>:null}
         
-            <div className="w-full pt-8 ">
-  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-32 gap-y-6 max-w-6xl mx-auto">
+            {/* <div className="w-full pt-8 ">
+  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-8 px-4 max-w-6xl mx-auto">
     {cate.length>1?cate.map((item) => (
       <Card
         key={item.id}
@@ -61,7 +61,33 @@ let total= Math.floor(subtotal+deliveryFee+taxes)
     )):<div className="flex text-center text-2xl text-[#FF8616] font-semibold pt-8">No Dish Found</div>}
     
   </div>
+</div> */}
+
+
+
+
+<div className="w-full pt-8 ">
+  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-4 max-w-7xl mx-auto">
+
+    {cate.length > 1 ? cate.map((item) => (
+      <Card
+        key={item.id}
+        name={item.food_name}
+        image={item.food_image}
+        price={item.price}
+        id={item.id}
+        type={item.food_type}
+      />
+    )) : <div className="flex text-center text-2xl text-[#FF8616] font-semibold pt-8">No Dish Found</div>}
+  </div>
 </div>
+
+
+
+
+
+
+
             
             {/* <div className={`w-full md:w-[40vw] h-[100%] fixed top-0 right-0 shadow-xl bg-[#FFAF68] p-6 duration-500  overflow-auto transition-all ${showCart? "translate-x-0":"translate-x-full "}
                  `}> */}
