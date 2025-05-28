@@ -39,7 +39,7 @@ function Footer() {
           <div className="link-column">
             <h3>Contact Us</h3>
             <ul>
-              <li><a href="mailto:hello@foodexpress.com">hello@foodexpress.com</a></li>
+              <li><a href="mailto:hello@foodexpress.com">hello@bitego.com</a></li>
               <li><a href="tel:+1800YUMFOOD">1-800-YUM-FOOD</a></li>
               <li>24/7 Customer Support</li>
               <li>Partner With Us</li>
@@ -50,7 +50,7 @@ function Footer() {
       </div>
       
       <div className="footer-bottom">
-        <p>&copy; {new Date().getFullYear()} FoodExpress. All rights reserved. <span className="food-slogan">Good food. Good mood.</span></p>
+        <p>&copy; {new Date().getFullYear()} BiteGo. All rights reserved. <span className="food-slogan">Good food. Good mood.</span></p>
         <div className="social-icons">
           <a href="#" aria-label="Facebook"><i className="fab fa-facebook"></i></a>
           <a href="#" aria-label="Instagram"><i className="fab fa-instagram"></i></a>
